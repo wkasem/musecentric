@@ -11,7 +11,6 @@
 |
 */
 
-Auth::LoginUsingId(2);
 Route::post('feedback' , 'homeController@feedback');
 
 Route::group(['middleware' => 'guest' ],function(){

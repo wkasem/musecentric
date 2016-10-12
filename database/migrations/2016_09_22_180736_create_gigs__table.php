@@ -21,8 +21,8 @@ class CreateGigsTable extends Migration
             $table->integer('budget');
             $table->string('location');
             $table->longText('summary');
-            $table->json('requirements');
-            $table->json('attachments');
+            $table->string('requirements');
+            $table->string('attachments');
             $table->timestamps();
         });
     }

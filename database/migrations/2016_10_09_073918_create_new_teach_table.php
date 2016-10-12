@@ -22,8 +22,8 @@ class CreateNewTeachTable extends Migration
           $table->string('location');
           $table->string('type');
           $table->longText('summary');
-          $table->json('benefits');
-          $table->json('attachments');
+          $table->string('benefits');
+          $table->string('attachments');
           $table->timestamps();
       });
     }

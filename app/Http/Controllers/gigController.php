@@ -38,7 +38,7 @@ class gigController extends Controller
     });
 
 
-     $teaches = Teach::with('enrolls')->orderBy('created_at' , 'DESC')->paginate(1);
+     $teaches = Teach::with('enrolls')->orderBy('created_at' , 'DESC')->paginate(10);
 
     $teaches->map(function($teach){
 
@@ -59,7 +59,7 @@ class gigController extends Controller
    public function gigsMore()
    {
 
-     $gigs = Gigs::with('bids')->orderBy('created_at' , 'DESC')->paginate(1);
+     $gigs = Gigs::with('bids')->orderBy('created_at' , 'DESC')->paginate(10);
 
     $gigs->map(function($gig){
 

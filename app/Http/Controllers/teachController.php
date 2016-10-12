@@ -53,6 +53,9 @@ class teachController extends Controller
         ]);
     });
 
+    if(auth()->user()->type == 2){
+      return redirect('/my-gigs')->with('new-teach' , true);
+    }
     return redirect('/my-classes')->with('new-teach' , true);
   }
 

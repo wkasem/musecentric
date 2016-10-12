@@ -41,14 +41,7 @@ class appSeeder extends Seeder
           'type'       => 3,
           'confirmed'  => 1
        ]]);
-      //   [
-      //      'first_name' => 'jhen',
-      //      'last_name'  => 'scully',
-      //      'email'      => 'jhen@music.com',
-      //      'password'   => bcrypt('1234'),
-      //      'type'       => 2,
-      //      'confirmed'  => 1
-      //   ],
+
       //   [
       //      'first_name' => 'waleed',
       //      'last_name'  => 'kasem',

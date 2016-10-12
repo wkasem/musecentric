@@ -44,6 +44,7 @@ class Offer extends Notification
     {
         return (new MailMessage)
                     ->line($this->data->user_name.' has Sent you offer to '.$this->data->gig_title.' Gig')
+                    ->line('You Have 24 hours only to Accept this or it will be removed')
                     ->line('Thank you for using our application!');
     }
 
